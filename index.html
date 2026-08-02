@@ -2,15 +2,24 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://discovery-biz-lovers-bracket.trycloudflare.com/">
-    <script>
-        // Tarayıcı önbelleğini ezmek için git yönlendirmesini zorluyoruz
-        window.location.replace("https://discovery-biz-lovers-bracket.trycloudflare.com/?v=" + new Date().getTime());
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>💙ZOKTAY💙</title>
+    <script>
+        // Yeni sabit Localtunnel adresimiz
+        const targetUrl = "https://zoktay.loca.lt/";
+
+        // Localtunnel yönlendirme uyarısını bypass ederek sayfaya git
+        window.onload = function() {
+            // Önbellek sorunlarını önlemek için versiyon parametresi ekliyoruz
+            const cleanUrl = targetUrl + "?v=" + new Date().getTime();
+            
+            // Doğrudan yeni sabit adrese yönlendir
+            window.location.replace(cleanUrl);
+        };
+    </script>
 </head>
 <body style="background-color: #0d1117; color: #8b949e; text-align: center; font-family: monospace; padding-top: 50px;">
     <h2 style="color: #ffffff; letter-spacing: 2px;">💙ZOKTAY💙 SİSTEMİNE BAĞLANILIYOR... 🔒</h2>
-    <p>Güvenli protokol başlatılıyor, lütfen bekleyin.</p>
+    <p>Güvenli tünel protokolü başlatılıyor, lütfen bekleyin.</p>
 </body>
 </html>
