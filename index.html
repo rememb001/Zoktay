@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>💙ZOKTAY💙</title>
     <script>
-        // Yeni sabit Localtunnel adresimiz
-        const targetUrl = "https://zoktay.loca.lt/";
+        // Yeni, şifresiz ve uyarısız tünel adresimiz
+        const targetUrl = "https://5955604016959b.lhr.life";
 
-        // Localtunnel yönlendirme uyarısını bypass ederek sayfaya git
         window.onload = function() {
-            // Önbellek sorunlarını önlemek için versiyon parametresi ekliyoruz
+            // Önbellek sorunlarını önlemek için
             const cleanUrl = targetUrl + "?v=" + new Date().getTime();
-            
-            // Doğrudan yeni sabit adrese yönlendir
             window.location.replace(cleanUrl);
         };
     </script>
